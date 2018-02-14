@@ -163,6 +163,7 @@ using namespace gpstk;
 %rename (toEngEphemeris) *::operator EngEphemeris() const;
 %rename (toGalEphemeris) *::operator GalEphemeris() const;
 %rename (toGloEphemeris) *::operator GloEphemeris() const;
+%rename (toGPSEphemeris) *::operator GPSEphemeris() const;
 %rename (toAlmOrbit) *::operator AlmOrbit() const;
 
 %include "AstronomicalFunctions.hpp"
@@ -328,6 +329,9 @@ namespace std { class fstream {}; }
 // Geomatics:
 %include "Geomatics.i"
 %include "SunEarthSatGeometry.hpp"
+
+// DCBs
+%include "DCBDataReader.hpp"
 
 // Encapsulation of many the __str__, __getitem__, etc. functions to avoid clutter.
 // When the only change to a class is adding a simple wrapper, add to pythonfunctions
