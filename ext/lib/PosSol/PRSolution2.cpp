@@ -39,6 +39,8 @@
  * Autonomous pseudorange navigation solution, including RAIM algorithm
  */
  
+#include <stdexcept>
+
 #include "MathBase.hpp"
 #include "PRSolution2.hpp"
 #include "EphemerisRange.hpp"
