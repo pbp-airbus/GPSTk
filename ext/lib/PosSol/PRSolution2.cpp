@@ -504,6 +504,10 @@ namespace gpstk
       {
          GPSTK_RETHROW(e);
       }
+      catch(std::out_of_range& e)
+      {
+         GPSTK_THROW(IndexOutOfBoundsException("Std error out of range"))
+      }
    }  // end PRSolution2::RAIMCompute()
 
 ///-------------------------------------------------------------------------///
